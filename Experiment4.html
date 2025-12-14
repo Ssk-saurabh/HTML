@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Experiment 4 :Hotel Room Booking Form</title>
+</head>
+<body>
+    <h1  align="center" >Hotel Room Booking Form</h1>
+    <div style="display: flex; justify-content: center; " >
+        
+        <form action="#" align="center" style="border: 1px solid black;
+         height:550px; width:500px; padding-top: 20px;">
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <br>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin">
+            <br>
+            <br>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout">
+            <br>
+            <br>
+
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10">
+            <br>
+            <br>
+            
+            <label for="requests">Special Requests:</label><br>
+            <textarea id="requests" name="requests" rows="10" cols="50"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset Form">
+        </form>
+    </div>
+    <div style="text-align: center;">
+        <b><p>Name : SAURABH SINGH KUSHWAHA</p>
+        <p>Class : CSE 26</p>
+        <p>Admission No. 2025B01010242 </p></b>
+    </div>
+</body>
+</html>

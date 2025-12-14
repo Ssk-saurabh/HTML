@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Product Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .outer-box {
+            width: 95%;
+            margin: 30px auto;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #f8d8d8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .product-card img {
+            width: 90px;
+            margin-bottom: 5px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 19px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+        .image{
+            height: 40px;
+        }
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-card img {
+        width: 90px;
+    }
+}
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+    .product-card img {
+        width: 60px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <h2>Responsive Product Grid</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="playstation.png" alt="Product">
+                <h3>Product 1</h3>
+                <p>High-quality item with great features.</p>
+                <div class="price">₹499</div>
+            </div>
+
+            <div class="product-card">
+                <img src="jacket.png" alt="Product">
+                <h3>Product 2</h3>
+                <p>Durable and stylish for daily use.</p>
+                <div class="price">₹799</div>
+            </div>
+
+            <div class="product-card">
+                <img src="chair.png" alt="Product">
+                <h3>Product 3</h3>
+                <p>Lightweight and comfortable.</p>
+                <div class="price">₹1,299</div>
+            </div>
+
+            <div class="product-card">
+                <img src="mat.png" alt="Product">
+                <h3>Product 4</h3>
+                <p>Trendy design with premium quality.</p>
+                <div class="price">₹999</div>
+            </div>
+
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <b><p>Name : SAURABH SINGH KUSHWAHA</p>
+        <p>Class : CSE 26</p>
+        <p>Admission No. 2025B01010242 </p></b>
+    </div>
+
+</body>
+</html>
